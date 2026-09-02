@@ -1,0 +1,2 @@
+import DetailPage from '@/components/DetailPage'; import {siteContent as c} from '@/content/site';
+export default function Insights(){return <DetailPage eyebrow={c.insights.eyebrow} title={c.insights.title} copy={c.insights.copy}><section className="section"><div className="container mini-grid">{c.insights.items.map(x=><article className="mini-card" key={x[0]}><span className="number">{x[0]}</span><h3>{x[1]}</h3><p>{x[2]}</p></article>)}</div></section></DetailPage>}
