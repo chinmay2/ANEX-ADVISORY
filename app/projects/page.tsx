@@ -1,0 +1,2 @@
+import DetailPage from '@/components/DetailPage'; import ProjectCard from '@/components/ProjectCard'; import {siteContent as c} from '@/content/site';
+export default function Projects(){return <DetailPage eyebrow={c.projects.eyebrow} title={c.projects.title} copy={c.projects.copy}><section className="section"><div className="container project-grid">{c.home.projects.map(p=><ProjectCard key={p[0]} name={p[0]} location={p[1]} image={p[2]}/>)}</div></section></DetailPage>}
