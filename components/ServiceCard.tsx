@@ -1,0 +1,2 @@
+import Link from 'next/link'; import Image from 'next/image';
+export default function ServiceCard({n,title,description,href,image}:{n:string,title:string,description:string,href:string,image:string}){return <Link className="card" href={href}><Image className="card-img" src={image} alt="" fill sizes="(max-width:900px) 100vw, 33vw"/><div className="card-shade"/><div className="card-body"><span className="card-num">{n}</span><h3>{title}</h3><p>{description}</p><span className="gold">Learn more →</span></div></Link>}
