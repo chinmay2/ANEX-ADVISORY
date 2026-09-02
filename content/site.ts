@@ -1,35 +1,310 @@
 export const siteContent = {
-  brand: { name:'ANEX', sub:'ADVISORY', tagline:'Real estate intelligence' },
-  nav: { home:'Home', services:'Services', projects:'Projects', locations:'Locations', about:'About us', insights:'Insights', cta:"Let’s connect" },
+  brand: { name: 'ANEX', sub: 'ADVISORY' },
+  nav: {
+    home: 'Home',
+    services: 'Services',
+    projects: 'Projects',
+    locations: 'Locations',
+    about: 'About us',
+    insights: 'Insights',
+    cta: 'Start Your Redevelopment',
+  },
+
   home: {
-    eyebrow:'ANEX ADVISORY', title:['Advisory for','decisions that','shape what','comes next.'],
-    description:'Strategic advisory and project intelligence for organizations navigating complex opportunities, investments, and growth.',
-    primary:'Start a conversation', secondary:'Explore our work',
-    stats:[['8+','Years of','Experience'],['150+','Projects','Advised'],['₹5,000Cr+','Transaction','Value'],['100%','Commitment to','Success']],
-    servicesEyebrow:'Our services', servicesTitle:'End-to-end advisory across the real estate value chain.',
-    servicesIntro:'Strategic advisory, transaction intelligence and execution support for developers, investors and societies navigating complex real estate decisions.',
-    servicesLink:'View all services',
-    services:[
-      {n:'01',title:'Capital Markets',description:'Strategic advisory for land transactions, finance structuring, JV/JDA/DM and strategic liaison services.',href:'/services/capital-markets',image:'https://framerusercontent.com/images/Ss3BXYoaNSRLr9eaWmi0Gf3Y.png'},
-      {n:'02',title:'Redevelopment',description:'Comprehensive redevelopment solutions from assessment to design, documentation and delivery.',href:'/services/redevelopment',image:'https://framerusercontent.com/images/rIJ09Kix5tYApuJPck9rvBijZuw.jpg?scale-down-to=2048'},
-      {n:'03',title:'Sales & Marketing',description:'360° sales and marketing solutions with data intelligence, CRM, brand strategy and execution.',href:'/services/sales-marketing',image:'https://framerusercontent.com/images/vye6yNSPc73UK2XY6pGNKYxLA.png'}
+    eyebrow: 'OUR MISSION',
+    title: ['Always', 'Ahead'],
+    description:
+      'Dedicated to pioneering excellence, ANEX is committed to providing comprehensive services that redefine the real estate landscape. We strive to be the trusted partner, guiding individuals, developers, & societies through every phase of their projects with integrity, expertise, and a relentless pursuit of success.',
+    primary: 'Learn more',
+    secondary: 'Home',
+
+    mission: {
+      eyebrow: 'OUR MISSION',
+      copy:
+        'Dedicated to pioneering excellence, ANEX is committed to providing comprehensive services that redefine the real estate landscape. We strive to be the trusted partner, guiding individuals, developers, & societies through every phase of their projects with integrity, expertise, and a relentless pursuit of success.',
+      link: 'Learn more',
+    },
+
+    servicesEyebrow: 'SERVICES',
+    servicesTitle: 'SERVICES',
+    servicesIntro: '',
+    servicesLink: 'Learn more',
+    services: [
+      {
+        n: '01',
+        title: 'CAPITAL MARKET',
+        description:
+          'Our Capital Markets services offer seamless support in Land Transactions, Joint Ventures, and Development Management. We specialize in Structuring Liaising Assistance and provide expert guidance in securing Finance for your real estate ventures.',
+        href: '/services#capital-market',
+        image: 'https://framerusercontent.com/images/Ss3BXYoaNSRLr9eaWmi0Gf3Y.png',
+        buttons: ['Learn more'],
+        tone: 'black',
+      },
+      {
+        n: '02',
+        title: 'REDEVELOPMENT',
+        description:
+          'Our Redevelopment services encompass meticulous Feasibility Analysis and culminating in precise Documentation & Design Finalization. We guide you through the Project Selection Process with expertise, ensuring optimal choices. Post-Vacation Appraisals provide invaluable insights, completing our comprehensive approach to redevelopment projects.',
+        href: '/services#redev',
+        image: 'https://framerusercontent.com/images/rIJ09Kix5tYApuJPck9rvBijZuw.jpg?scale-down-to=2048',
+        buttons: ['Learn more', 'Society Redevelopment'],
+        tone: 'blue',
+      },
+      {
+        n: '03',
+        title: 'SALES & MARKETING',
+        description:
+          'Our Sales and Marketing services offer a comprehensive strategy, covering Product Design, Market Intelligence, Inventory Management, and Brand Communication. With expert Sales Deployment and advanced CRM systems, we ensure seamless processes and enhanced customer engagement for your real estate success.',
+        href: '/services#sales-marketing',
+        image: 'https://framerusercontent.com/images/vye6yNSPc73UK2XY6pGNKYxLA.png',
+        buttons: ['Learn more'],
+        tone: 'cobalt',
+      },
     ],
-    advantageEyebrow:'The ANEX advantage', advantageTitle:'Institutional thinking. Hands-on execution.', advantageCopy:'Backed by an 8-year legacy in institutional real estate advisory and consulting, ANEX combines market intelligence, capital expertise and redevelopment understanding.',
-    principles:[['01','Integrity','Transparent advice grounded in facts, relationships and long-term outcomes.'],['02','Expertise','Specialist thinking translated into practical decisions and measurable progress.'],['03','Collaboration','One connected team keeping stakeholders aligned from opportunity to execution.']],
-    projectsEyebrow:'Featured projects', projectsTitle:['Transforming skylines.','Creating value.'], projectsLink:'View all projects',
-    projects:[['TRANSCO N RAMDEV PLAZA','Commercial · Mumbai','https://framerusercontent.com/images/3SmDDY7hW3LHWomF3ip2owA48.jpg?scale-down-to=512'],['IRENE','Residential · Mumbai','https://framerusercontent.com/images/JUodshYxl4a1hHiZz9x3wncZtYw.png?scale-down-to=1024'],['KALPATARU MAGNUS','Residential · Mumbai','https://framerusercontent.com/images/0Ue86UX5iZmFiPAyhnml9yaJ0B0.jpg?scale-down-to=4096'],['RUNWAL TIMELESS','Residential · Mumbai','https://framerusercontent.com/images/EqRcBtYPiG0RO0VKe4hU6uJSiKY.png?scale-down-to=1024'],['THE RESIDENCES','Commercial · MMR','https://framerusercontent.com/images/3SmDDY7hW3LHWomF3ip2owA48.jpg?scale-down-to=512']],
-    ctaEyebrow:"Let’s connect", ctaTitle:'Bring us the complexity.', ctaCopy:'Tell us what you are building, evaluating or solving. We’ll bring the right perspective to the conversation.'
+
+    advantageEyebrow: 'COLLECTIVE EXPERIENCE',
+    advantageTitle: 'Our leadership team brings collective experiences spanning across various real estate projects.',
+    advantageCopy:
+      'Our leadership team brings collective experiences spanning across various real estate projects.',
+    principles: [],
+
+    collectiveExperience: {
+      eyebrow: 'COLLECTIVE EXPERIENCE',
+      copy: 'Our leadership team brings collective experiences spanning across various real estate projects.',
+      link: 'Home',
+      projects: ['BEAUMONT', 'PRESCON', 'VISION', 'MIRACLE BAY'],
+    },
+
+    projectsEyebrow: 'COLLECTIVE EXPERIENCE',
+    projectsTitle: ['Our leadership team brings collective', 'experiences spanning across various real estate projects.'],
+    projectsLink: 'Home',
+    projects: [
+      ['BEAUMONT', 'Residential', 'https://framerusercontent.com/images/3SmDDY7hW3LHWomF3ip2owA48.jpg?scale-down-to=512'],
+      ['PRESCON', 'Residential', 'https://framerusercontent.com/images/JUodshYxl4a1hHiZz9x3wncZtYw.png?scale-down-to=1024'],
+      ['VISION', 'Residential', 'https://framerusercontent.com/images/0Ue86UX5iZmFiPAyhnml9yaJ0B0.jpg?scale-down-to=4096'],
+      ['MIRACLE BAY', 'Residential', 'https://framerusercontent.com/images/EqRcBtYPiG0RO0VKe4hU6uJSiKY.png?scale-down-to=1024'],
+    ],
+
+    ctaEyebrow: "LET'S CONNECT",
+    ctaTitle: "LET'S CONNECT",
+    ctaCopy: "Let's collaborate to transform your vision into reality.",
+    ctaPrimary: 'Get in touch',
+    ctaSecondary: 'Services',
   },
-  about:{eyebrow:'ANEX / OUR STORY',title:'The ANEX way.',copy:'A one-stop solution for real estate, supporting individuals, developers and societies while curating all-round success stories.',storyEyebrow:'Our story',storyTitle:'Eight years of institutional thinking.',story:["Dedicated to pioneering excellence, ANEX is committed to providing comprehensive services that redefine the real estate landscape. We strive to be the trusted partner, guiding individuals, developers, and societies through every phase of their projects with integrity, expertise, and a relentless pursuit of success.","Backed by an 8-year legacy in institutional real estate advisory and consulting, ANEX serves developers with visionary, end-to-end solutions — from initial land acquisition to final sales."],strengthsEyebrow:'Our strengths',strengthsTitle:'Built for decisions that matter.',strengths:[['01','Comprehensive solutions','Land, capital, sales, marketing, finance and CRM under one strategic roof.'],['02','Hands-on expertise','Bespoke support designed to improve profitability and decision quality.'],['03','Risk management','Assessment, compliance and proactive mitigation built into the advisory process.']]},
-  leadership:{eyebrow:'LEADERSHIP',title:'Our Leadership',copy:'Experienced leaders with a shared vision and relentless drive.',people:[['Sanjay Daga','Managing Director'],['Leadership Team','ANEX Advisory'],['Advisory Team','ANEX Advisory'],['Capital Markets','ANEX Advisory']]},
-  services:{eyebrow:'ANEX / SERVICES',title:'Capabilities for complex real estate.',copy:'Three disciplines. One integrated advisory perspective.',items:[['Capital Markets','Land transactions, finance, JV/JDA/DM structuring and strategic liaising.','/services/capital-markets'],['Redevelopment','Assessment, feasibility, documentation, design and development monitoring.','/services/redevelopment'],['Sales & Marketing','Brand strategy, resource deployment, product design, inventory and project management.','/services/sales-marketing']]},
-  servicePages:{
-    'capital-markets':{eyebrow:'CAPITAL MARKETS',title:'Capital, structured with intent.',copy:'Strategic advisory across land transactions, finance structuring, JV/JDA/DM and strategic liaison.',points:['Land Transactions','Finance','JV / JD / DM','Liaising']},
-    redevelopment:{eyebrow:'REDEVELOPMENT',title:'From potential to project.',copy:'Comprehensive redevelopment solutions from assessment and feasibility through documentation, design and delivery.',points:['Society Assessment','Feasibility & Structuring','Documentation','Development Monitoring']},
-    'sales-marketing':{eyebrow:'SALES & MARKETING',title:'Create demand. Convert opportunity.',copy:'360° sales and marketing solutions powered by data intelligence, CRM, brand strategy and disciplined execution.',points:['Brand Strategy','Resource Deployment','Product Design','Sales & Project Management']}
+
+  services: {
+    eyebrow: 'OUR SERVICES',
+    title: 'OUR SERVICES',
+    copy: '',
   },
-  projects:{eyebrow:'ANEX / PROJECTS',title:'Experience, in the real world.',copy:'A selection of developments and advisory environments that reflect the breadth of our collective experience.',items:[['TRANSCO N RAMDEV PLAZA','Mumbai'],['IRENE','Mumbai'],['KALPATARU MAGNUS','Mumbai'],['RUNWAL TIMELESS','Mumbai'],['THE RESIDENCES','MMR']]},
-  locations:{eyebrow:'ANEX / LOCATIONS',title:'Close to the market. Close to the decision.',copy:'Our advisory footprint follows the markets where complexity and opportunity meet.',items:[['01','Mumbai / MMR','Our core market, spanning developers, societies, investors and institutional real estate opportunities.'],['02','Pune','A growing advisory market where development, capital and sales intelligence intersect.'],['03','Beyond','Our network and relationships allow us to evaluate opportunities beyond our core footprint.']],office:'Bandra East, Mumbai.',address:'1315/16/17, C-Wing, One BKC, G Block, BKC, Bandra East, Mumbai — 400051'},
-  insights:{eyebrow:'ANEX / INSIGHTS',title:'Perspectives for what comes next.',copy:'Ideas, intelligence and observations across real estate, capital and development.',items:[['01','Reading the redevelopment opportunity','How disciplined feasibility changes the quality of a redevelopment decision.'],['02','Capital with context','Why transaction structure matters as much as transaction value.'],['03','Selling the right story','The role of positioning, data and execution in real estate sales.']]},
-  contact:{eyebrow:'ANEX / CONTACT',title:'Let’s shape what comes next.',copy:'Tell us what you are building, evaluating or solving. We’ll bring the right perspective to the conversation.',email:'info@anexadvisory.com',phones:['+91 99302 02805','+91 99202 46228'],address:'1315/16/17, C-Wing, One BKC, G Block, BKC, Bandra East, Mumbai — 400051'}
+
+  servicePages: {
+    'capital-markets': {
+      eyebrow: 'CAPITAL MARKETS',
+      title: 'CAPITAL MARKETS',
+      copy: '',
+      sections: [
+        {
+          number: '01',
+          title: 'Land Transactions',
+          items: [
+            'Identifying opportunities',
+            'Preliminary title verification',
+            'Detailed Due Diligence',
+            'Efficient tax structuring.',
+          ],
+        },
+        {
+          number: '02',
+          title: 'Finance',
+          items: [
+            'Construction & Project Finance Inventory Funding',
+            'Structured lease rental discounting',
+            'Last mile funding',
+          ],
+        },
+        {
+          number: '03',
+          title: 'JV / JD / DM',
+          items: [
+            'Deal Structuring',
+            'Roles & Responsibilities',
+            'Legal Documentation',
+            'Project management review',
+          ],
+        },
+        {
+          number: '04',
+          title: 'Liaising',
+          items: [
+            'Liaising assistance',
+            'Hassle Free timely approvals permissions',
+            'Networking & Relationships',
+          ],
+        },
+      ],
+      points: ['Land Transactions', 'Finance', 'JV / JD / DM', 'Liaising'],
+    },
+
+    redevelopment: {
+      eyebrow: 'REDEVELOPMENT',
+      title: 'REDEVELOPMENT',
+      copy: '',
+      sections: [
+        {
+          number: '01',
+          title: 'Assessment and Planning',
+          items: [
+            'Conducting a comprehensive assessment of the property to identify its strengths, weaknesses, and potential for redevelopment.',
+            'Analysing market trends, demand dynamics, and regulatory considerations to inform redevelopment strategies.',
+            'Developing a strategic redevelopment plan which outlines objectives, timelines, budgetary considerations, and key milestone.',
+          ],
+        },
+        {
+          number: '02',
+          title: 'Feasibility Analysis',
+          items: [
+            'Performing financial analysis and feasibility studies to evaluate the economic viability of the redevelopment project.',
+            'Assessing potential costs, returns on investment for developers, and risk factors associated with the redevelopment effort.',
+            'Identifying financing options and structuring the capital stack for redevelopment projects, post-appointment by developers.',
+          ],
+        },
+        {
+          number: '03',
+          title: 'Documentation',
+          items: [
+            'Request for SoW: Outlines project requirements, objectives, scope of work, and evaluation criteria for potential contractors, architects, engineers, and consultants with specific submission instructions, deadlines & format.',
+            'Tender Documents that capture information on the tendering process, bid submission procedures, and evaluation criteria.',
+            'Facilitating the drafting of development agreement with developers and society members.',
+          ],
+        },
+        {
+          number: '04',
+          title: 'Design and Development',
+          items: [
+            'Monitoring project progress',
+            'Monthly status update reports',
+            'Fulfilment of tender conditions',
+            'Snagging and auditing projects at handover',
+          ],
+        },
+      ],
+      points: ['Assessment and Planning', 'Feasibility Analysis', 'Documentation', 'Design and Development'],
+    },
+
+    'sales-marketing': {
+      eyebrow: 'SALES & MARKETING',
+      title: 'SALES & MARKETING',
+      copy: '',
+      sections: [
+        {
+          number: '01',
+          title: 'Brand Visibility & Strategy',
+          items: [
+            'Market Intelligence & Data Analysis',
+            'Content and Social media Strategies',
+            'Devising Product Positioning',
+            'Long term Brand Building',
+          ],
+        },
+        {
+          number: '02',
+          title: 'Resource Deployment',
+          items: [
+            'Pre-sales Support',
+            'Sales Management Team',
+            'Digital Integration',
+            'CRM',
+            'Post-sales Support',
+          ],
+        },
+        {
+          number: '03',
+          title: 'Innovative Product Design & Inventory Management',
+          items: [
+            'Distinguishing products in the market',
+            'Analysing Competition',
+            'Inventory data analysis & solutions',
+            'Proposing Ideal Product Mix',
+          ],
+        },
+        {
+          number: '04',
+          title: 'Project Management',
+          items: [
+            'Process Optimisation',
+            'Lead Management System',
+            'Sales & Marketing Dashboards',
+            'CP Relationships & Engagement',
+          ],
+        },
+      ],
+      points: ['Brand Visibility & Strategy', 'Resource Deployment', 'Innovative Product Design & Inventory Management', 'Project Management'],
+    },
+  },
+
+  about: {
+    eyebrow: 'OUR MISSION',
+    title: 'OUR MISSION',
+    copy:
+      'Dedicated to pioneering excellence, ANEX is committed to providing comprehensive services that redefine the real estate landscape. We strive to be the trusted partner, guiding individuals, developers, & societies through every phase of their projects with integrity, expertise, and a relentless pursuit of success.',
+    storyEyebrow: 'OUR MISSION',
+    storyTitle: 'OUR MISSION',
+    story: [
+      'Dedicated to pioneering excellence, ANEX is committed to providing comprehensive services that redefine the real estate landscape. We strive to be the trusted partner, guiding individuals, developers, & societies through every phase of their projects with integrity, expertise, and a relentless pursuit of success.',
+    ],
+    strengthsEyebrow: 'COLLECTIVE EXPERIENCE',
+    strengthsTitle: 'COLLECTIVE EXPERIENCE',
+    strengths: [],
+  },
+
+  leadership: {
+    eyebrow: 'COLLECTIVE EXPERIENCE',
+    title: 'COLLECTIVE EXPERIENCE',
+    copy: 'Our leadership team brings collective experiences spanning across various real estate projects.',
+    people: [],
+  },
+
+  projects: {
+    eyebrow: 'COLLECTIVE EXPERIENCE',
+    title: 'COLLECTIVE EXPERIENCE',
+    copy: 'Our leadership team brings collective experiences spanning across various real estate projects.',
+    items: [
+      ['BEAUMONT', 'Mumbai'],
+      ['PRESCON', 'Mumbai'],
+      ['VISION', 'Mumbai'],
+      ['MIRACLE BAY', 'Mumbai'],
+    ],
+  },
+
+  locations: {
+    eyebrow: 'LOCATIONS',
+    title: 'LOCATIONS',
+    copy: '',
+    items: [],
+    office: 'Bandra East, Mumbai',
+    address: '1315/16/17, C-Wing, One BKC, G Block, BKC, Bandra East, Mumbai - 400051',
+  },
+
+  insights: {
+    eyebrow: 'INSIGHTS',
+    title: 'INSIGHTS',
+    copy: '',
+    items: [],
+  },
+
+  contact: {
+    eyebrow: "LET'S CONNECT",
+    title: "LET'S CONNECT",
+    copy: "Let's collaborate to transform your vision into reality.",
+    email: 'info@anexadvisory.com',
+    phones: ['+91 9930202805', '+91 9920246228'],
+    address: '1315/16/17, C-Wing, One BKC, G Block, BKC, Bandra East, Mumbai - 400051',
+    businessEnquiries: 'For Business Enquiries only',
+    getInTouch: 'Get in touch',
+  },
+
+  footer: {
+    copyright: '©2024 Anex. All rights reserved',
+  },
 } as const;
