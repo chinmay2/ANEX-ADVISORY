@@ -1,0 +1,3 @@
+import {notFound} from 'next/navigation'; import DetailPage from '@/components/DetailPage'; import {siteContent as c} from '@/content/site';
+export function generateStaticParams(){return Object.keys(c.servicePages).map(slug=>({slug}))}
+export default async function ServiceDetail({params}:{params:Promise<{slug:string}>}){const {slug}=await params; const item=c.servicePages[slug as keyof typeof c.servicePages]; if(!item)notFound(); return <DetailPage eyebrow={item.eyebrow} title={item.title} copy={item.copy}><section className="section"><div className="container"><div className="mini-grid">{item.points.map((x,i)=><div className="mini-card" key={x}><span className="number">0{i+1}</span><h3>{x}</h3><p>{c.services.copy}</p></div>)}</div></div></section></DetailPage>}
