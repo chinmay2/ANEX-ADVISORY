@@ -1,2 +1,28 @@
-import Link from 'next/link'; import {siteContent as c} from '@/content/site';
-export default function Footer(){return <footer className="footer"><div className="container footer-inner"><div><div className="brand"><span className="brand-symbol">A</span><span className="brand-copy"><strong>{c.brand.name}</strong><small>{c.brand.sub}</small></span></div><p>© {new Date().getFullYear()} ANEX Advisory. All rights reserved.</p></div><div><Link href="/contact">{c.nav.cta}</Link> · <Link href="/about">{c.nav.about}</Link> · <Link href="/insights">{c.nav.insights}</Link></div></div></footer>}
+import Link from 'next/link';
+import { siteContent as c } from '@/content/site';
+
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <div className="container footer-inner">
+        <div>
+          <div className="brand">
+            <span className="brand-symbol">A</span>
+            <span className="brand-copy">
+              <strong>{c.brand.name}</strong>
+              <small>{c.brand.sub}</small>
+            </span>
+          </div>
+          <p>{c.footer.copyright}</p>
+        </div>
+        <div>
+          <Link href="/contact">{c.nav.cta}</Link>
+          {' · '}
+          <Link href="/about">{c.nav.about}</Link>
+          {' · '}
+          <Link href="/insights">{c.nav.insights}</Link>
+        </div>
+      </div>
+    </footer>
+  );
+}
