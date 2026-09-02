@@ -1,0 +1,2 @@
+import Link from 'next/link'; import ServiceCard from '@/components/ServiceCard'; import DetailPage from '@/components/DetailPage'; import {siteContent as c} from '@/content/site';
+export default function Services(){return <DetailPage eyebrow={c.services.eyebrow} title={c.services.title} copy={c.services.copy}><section className="section"><div className="container service-grid">{c.home.services.map(s=><ServiceCard key={s.title} {...s}/>)}</div></section></DetailPage>}
